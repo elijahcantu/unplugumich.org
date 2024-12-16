@@ -76,7 +76,10 @@ layout: default
         </ul>
       </div>
       <header>
-        Unplug UMich is a student organization focused on helping individuals manage their screen time. We offer meetings to assist with device restrictions, content blocking, and personalized strategies for healthier digital habits. Our goal is to create a supportive space where members can connect with accountability partners to reduce screen time and improve well-being.
+        Unplug UMich is a student organization focused on helping individuals manage their screen time. We offer
+        meetings to assist with device restrictions, content blocking, and personalized strategies for healthier digital
+        habits. Our goal is to create a supportive space where members can connect with accountability partners to
+        reduce screen time and improve well-being.
       </header>
       <!-- Team section -->
       <h2 id="team">Team</h2>
@@ -91,14 +94,18 @@ layout: default
               Elijah Cantu
             </div>
             <div class="description">
-              <a data-tooltip="elijahcantu.com" href="https://elijahcantu.com" target="_blank"><i class="icon globe"></i></a>
-              <a data-tooltip="LinkedIn: elijahcantu" href="https://www.linkedin.com/in/elijahcantu/" target="_blank"> <i class="icon linkedin"></i></a>
-              <a data-tooltip="GitHub: elijahcantu" href="https://github.com/elijahcantu/" target="_blank"> <i class="icon github"></i></a>
-              <a data-tooltip="Email: caelijah@umich.edu" href="mailto:caelijah@umich.edu" target="_blank"> <i class="icon envelope"></i></a>
+              <a data-tooltip="elijahcantu.com" href="https://elijahcantu.com" data-position="bottom left" target="_blank"><i
+                  class="icon globe"></i></a>
+              <a data-tooltip="LinkedIn: elijahcantu" href="https://www.linkedin.com/in/elijahcantu/" data-position="bottom left"  target="_blank">
+                <i class="icon linkedin"></i></a>
+              <a data-tooltip="GitHub: elijahcantu" href="https://github.com/elijahcantu/" data-position="bottom left"  target="_blank"> <i
+                  class="icon github"></i></a>
+              <a data-tooltip="Email: caelijah@umich.edu" href="mailto:caelijah@umich.edu" data-position="bottom left"  target="_blank"> <i
+                  class="icon envelope"></i></a>
             </div>
           </div>
           <div class="content emojis">
-            <span data-tooltip="Showers in the EECS building">&#x1F6BF;</span>
+            <span data-tooltip="Showers in the EECS building" data-position="top left" >&#x1F6BF;</span>
             <span data-tooltip="Doesn't listen to music">&#x1F507;</span>
             <span data-tooltip="Hiked 5 mountains">&#x1F3D4;</span>
             <span data-tooltip="Visited 6 countries">&#x1F6E9;</span>
@@ -113,8 +120,10 @@ layout: default
           <div class="content">
             <div class="header" id="samina-name">Samina Niazi Nuzhat</div>
             <div class="description">
-              <a data-tooltip="LinkedIn: saminanuzhat" href="https://www.linkedin.com/in/saminanuzhat/" target="_blank"> <i class="icon linkedin"></i></a>
-              <a data-tooltip="Email: snuzhat@umich.edu" href="mailto:snuzhat@umich.edu" target="_blank"> <i class="icon envelope"></i></a>
+              <a data-tooltip="LinkedIn: saminanuzhat" data-position="bottom left" href="https://www.linkedin.com/in/saminanuzhat/" target="_blank">
+                <i class="icon linkedin"></i></a>
+              <a data-tooltip="Email: snuzhat@umich.edu"data-position="bottom left" href="mailto:snuzhat@umich.edu" target="_blank"> <i
+                  class="icon envelope"></i></a>
             </div>
           </div>
         </div>
@@ -126,9 +135,13 @@ layout: default
           <div class="content">
             <div class="header">Syeda Reza</div>
             <div class="description">
-              <a data-tooltip="LinkedIn: elijahcantu" href="https://www.linkedin.com/in/syeda-reza/" target="_blank"> <i class="icon linkedin"></i></a>
-              <a data-tooltip="GitHub: sy3da" href="https://github.com/sy3da/" target="_blank"> <i class="icon github"></i></a>
-              <a data-tooltip="Email: syerez@umich.edu" href="mailto:syerez@umich.edu" target="_blank"> <i class="icon envelope"></i></a>            </div>
+              <a data-tooltip="LinkedIn: syeda-reza" data-position="bottom left"  href="https://www.linkedin.com/in/syeda-reza/" target="_blank"> <i
+                  class="icon linkedin"></i></a>
+              <a data-tooltip="GitHub: sy3da" data-position="bottom left" href="https://github.com/sy3da/" target="_blank"> <i
+                  class="icon github"></i></a>
+              <a data-tooltip="Email: syerez@umich.edu" data-position="bottom left"  href="mailto:syerez@umich.edu" target="_blank"> <i
+                  class="icon envelope"></i></a>
+            </div>
           </div>
         </div>
       </div><!-- ui stackable cards -->
@@ -167,8 +180,8 @@ layout: default
       align-items: center !important;
       width: 100%;
     }
-    #samina-name{
-      font-size:1.225em;
+    #samina-name {
+      font-size: 1.225em;
     }
   </style>
   <script>
@@ -179,7 +192,7 @@ layout: default
       if (email.trim() === '') {
         $('.ui.error.message').css('display', 'block');
         $('.ui.success.message').css('display', 'none');
-        return; 
+        return;
       }
       $('.ui.error.message').css('display', 'none');
       $('#mailinglistform').ajaxSubmit({
@@ -187,9 +200,17 @@ layout: default
         dataType: 'jsonp',
         error: function () {
           $('.ui.success.message').css('display', 'block');
-          $('#user-email').text(email); 
+          $('#user-email').text(email);
           $('#1721750162').val('');
         }
       })
     })
+  </script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EHTFG61313"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-EHTFG61313');
   </script>
